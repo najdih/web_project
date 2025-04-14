@@ -1,0 +1,112 @@
+/* Contact Section Container */
+.contact-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 140px 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    transform: translateY(50px);
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+
+/* Section Title */
+.contact-section h1 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    animation: fadeIn 1.2s ease-in forwards;
+    opacity: 0;
+}
+
+/* Contact Form Container */
+.contact-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.4s ease-in forwards;
+    opacity: 0;
+    margin-top: 80px;
+}
+select, input[type="tel"] {
+    padding: 1px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+  }
+  select {
+    padding: 1px;
+    margin-left: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+  }
+/* Form Layout */
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input & Textarea Styling */
+.contact-box input,
+.contact-box textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.contact-box input::placeholder,
+.contact-box textarea::placeholder {
+    color: #ccc;
+}
+
+/* Submit Button */
+.contact-box button {
+    padding: 15px;
+    background-color: #00BFFF;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-box button:hover {
+    background-color: #0099cc;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .contact-box {
+        padding: 25px;
+    }
+
+    .contact-section h1 {
+        font-size: 32px;
+    }
+}
